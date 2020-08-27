@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/hinh_nen_iphone_2"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="280dp"
+        android:layout_height="350dp"
+        android:background="#7BB5D4D8">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edt_id"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/doctor2" />
+
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edt_password"
+            android:layout_alignLeft="@+id/edt_password"
+            android:layout_marginRight="50dp"
+            android:hint="ID"
+            android:textSize="20dp" />
+
+        <EditText
+
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:hint="Password"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_encrytion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_encrytion" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/img_encrytion"
+            android:layout_marginBottom="10dp"
+            android:backgroundTintMode="screen"
+            android:src="@drawable/ic_person" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFF"
+            android:text="Login"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
